@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sourcey.BusinessAssist">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".SignupActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".BusinessResultActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".TradeResultActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Positive"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Negative"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".PositiveReview"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".NegativeReview"
+            android:theme="@style/AppTheme" ></activity>
+    </application>
+
+</manifest>

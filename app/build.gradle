@@ -1,0 +1,58 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion '22.0.1'
+
+    defaultConfig {
+        applicationId "com.sourcey.materialloginexample"
+        minSdkVersion 15
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/LICENSE'
+    }
+
+    repositories {
+        maven { url "https://jitpack.io" }
+    }
+}
+
+dependencies {
+
+    compile 'com.github.PhilJay:MPAndroidChart:v2.1.6'
+
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:22.2.0'
+    compile 'com.android.support:design:22.2.0'
+    compile 'com.jakewharton:butterknife:7.0.1'
+
+    compile group: 'com.squareup.okhttp', name: 'okhttp-urlconnection', version: '2.7.5'
+    compile group: 'com.cloudant', name: 'cloudant-client', version: '2.6.0'
+    compile 'com.google.code.gson:gson:2.2.4'
+
+    compile 'com.google.code.gson:gson:2.2.4'
+    compile 'org.jbundle.util.osgi.wrapped:org.jbundle.util.osgi.wrapped.org.apache.http.client:4.1.2'
+    compile 'com.ibm.watson.developer_cloud:java-sdk:3.3.0'
+
+
+
+    compile 'com.yelp.clientlib:yelp-android:2.0.0'
+
+    compile 'com.ibm.watson.developer_cloud:java-sdk:3.0.0-RC1'
+
+    compile 'com.ibm.watson.developer_cloud:java-sdk:2.10.0'
+
+    compile 'com.ibm.watson.developer_cloud:java-sdk:3.5.0'
+
+
+}
